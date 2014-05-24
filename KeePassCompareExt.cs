@@ -17,8 +17,7 @@ namespace KeePassCompare {
         private ToolStripMenuItem m_tsmiMenuItem2 = null;
         private IPluginHost m_host = null;
 
-        private List<PwGroup> difGroups = null;
-
+        public string UpdateUrl = "https://raw.githubusercontent.com/georgekosmidis/KeePassCompare/master/version.txt";
 
         public override bool Initialize( IPluginHost host ) {
             if ( host == null ) return false;
