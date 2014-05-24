@@ -1,5 +1,0 @@
-C:\Program Files (x86)\KeePass Password Safe 2\KeePassCompare.dll
-C:\Program Files (x86)\KeePass Password Safe 2\KeePassCompare.pdb
-D:\George\Desktop\EnableGridLines-1.1-Source\obj\Debug\KeePassCompare.dll
-D:\George\Desktop\EnableGridLines-1.1-Source\obj\Debug\KeePassCompare.pdb
-D:\George\Desktop\EnableGridLines-1.1-Source\obj\Debug\KeePassCompare.csprojResolveAssemblyReference.cache

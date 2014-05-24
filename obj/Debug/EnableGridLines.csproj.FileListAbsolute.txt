@@ -1,8 +1,0 @@
-D:\George\Desktop\EnableGridLines-1.1-Source\bin\Debug\KeePass.exe
-D:\George\Desktop\EnableGridLines-1.1-Source\bin\Debug\KeePass.XmlSerializers.dll
-D:\George\Desktop\EnableGridLines-1.1-Source\bin\Debug\KeePassCompare.dll
-D:\George\Desktop\EnableGridLines-1.1-Source\bin\Debug\KeePassCompare.pdb
-D:\George\Desktop\EnableGridLines-1.1-Source\obj\Debug\KeePassCompare.dll
-D:\George\Desktop\EnableGridLines-1.1-Source\obj\Debug\KeePassCompare.pdb
-C:\Program Files (x86)\KeePass Password Safe 2\KeePassCompare.dll
-C:\Program Files (x86)\KeePass Password Safe 2\KeePassCompare.pdb
