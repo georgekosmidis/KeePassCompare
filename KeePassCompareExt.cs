@@ -152,7 +152,7 @@ namespace KeePassCompare {
             // return prec.Compare( pe1, pe2 ) > 0;
             //return pe1.LastModificationTime == pe2.LastModificationTime;
             foreach ( var o in pe1.Strings ) {
-                if ( pe2.Strings.Get( o.Key ).ReadString() != o.Value.ReadString() )
+                if ( !pe2.Strings.Exists( o.Key ) || pe2.Strings.Get( o.Key ).ReadString() != o.Value.ReadString() )
                     return false;
             }
             return true;
