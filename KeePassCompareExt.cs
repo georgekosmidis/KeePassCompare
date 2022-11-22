@@ -100,8 +100,9 @@ namespace KeePassCompare {
                     }
                     s += es + ent.Strings.Get( "Title" ).ReadString() + Environment.NewLine;
                 }
-                MessageBox.Show( "The following differences where found: " + Environment.NewLine + s, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information );
 
+                if (MessageBox.Show( "The following differences were found:" + Environment.NewLine + "(copy to clipboard?)" + Environment.NewLine + s, "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information ) == DialogResult.Yes)
+                    System.Windows.Forms.Clipboard.SetText(s);
             }
             m_host.MainWindow.UpdateUI( false, null, true, null, true, null, false );
 
@@ -152,7 +153,7 @@ namespace KeePassCompare {
             // return prec.Compare( pe1, pe2 ) > 0;
             //return pe1.LastModificationTime == pe2.LastModificationTime;
             foreach ( var o in pe1.Strings ) {
-                if ( pe2.Strings.Get( o.Key ).ReadString() != o.Value.ReadString() )
+                if ( !pe2.Strings.Exists( o.Key ) || pe2.Strings.Get( o.Key ).ReadString() != o.Value.ReadString() )
                     return false;
             }
             return true;
